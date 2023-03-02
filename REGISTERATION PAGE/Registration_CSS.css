@@ -217,6 +217,29 @@ form .btn {
     overflow: hidden;
 }
 
+form .UserType {
+    color: #b3b3b3;
+}
+
+form .user{   
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+form #usertype {
+    color: #b3b3b3;
+    /* width: 13rem; */
+    /* height: 2.5rem; */
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 3px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
 form .btn .btn-layer {
     height: 100%;
     width: 300%;
