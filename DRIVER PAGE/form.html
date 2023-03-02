@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Form</title>
+    <style>
+        form {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #f6c7c7;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") no-repeat;
+  background-position: calc(100% - 10px) center;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #4ea8ec;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #4ea8ec;
+}
+
+label input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+input:required, select:required, textarea:required {
+  border-color: #ccc;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+  border-color: rgb(90, 140, 239);
+}
+
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Driver Form</h2>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+          
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+          
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required>
+          
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required>
+          
+          <label for="zip">Zip Code:</label>
+          <input type="text" id="zip" name="zip" required>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Driver Information</legend>
+          <label for="license">Driver's License Number:</label>
+          <input type="text" id="license" name="license" required>
+          
+          <label for="vehicle">Vehicle Type:</label>
+          <select id="vehicle" name="vehicle" required>
+            <option value="">Select Vehicle Type</option>
+            <option value="car">Car</option>
+            <option value="van">Van</option>
+            <option value="truck">Truck</option>
+          </select>
+          
+          <label for="experience">Years of Driving Experience:</label>
+          <input type="number" id="experience" name="experience" required>
+
+            <label for="image-upload">Upload driving license:</label>
+            <input type="file" id="image-upload" name="image" required>
+          
+        
+        <fieldset>
+          <legend>Terms and Conditions</legend>
+          <p>Please read the following terms and conditions carefully:</p>
+          <ul>
+            <li>Drivers are required to have a valid driver's license and a clean driving record.</li>
+            <li>Drivers are responsible for the maintenance and upkeep of their vehicles.</li>
+            <li>Drivers must be willing to work flexible hours, including weekends and holidays.</li>
+          </ul>
+          <label for="accept">
+            <input type="checkbox" id="accept" name="accept" required>
+            I agree to the terms and conditions.
+          </label>
+        </fieldset>
+        
+        <button type="submit">Submit</button>
+      </form>
+      
+</body>
+</html>

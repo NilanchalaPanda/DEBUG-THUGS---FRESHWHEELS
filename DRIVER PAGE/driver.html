@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DRIVER PAGE</title>
+    <link rel="stylesheet" href="driver.css">
+  </head>
+  <body>
+    <nav>
+      
+      <div class="menu">
+        <ul>
+          <li><a href="orders.html">ORDERS</a></li>
+          <li><a href="profile.html">MY PROFILE</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+        if ("geolocation" in navigator) {
+  console.log('geolocation available');
+    } 
+    else 
+    {
+    console.log('geolocation not available');
+    }   
+    </script>
+    <img src="FARM WHEELS.png">GOOGLE MAPS
+    <table aria-setsize="0.5">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Action</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ABC</td>
+            <td>Chembur</td>
+            <td>Kalyan</td>
+            <td>
+              <select>
+                <option value="accept">Accept</option>
+                <option value="decline">Decline</option>
+              </select>
+            </td>
+            <td>
+                <select>
+                  <option value="accept">Pending</option>
+                  <option value="decline">Delivered</option>
+                </select>
+              </td>
+
+          </tr>
+          <tr>
+            <td>LMN</td>
+            <td>Thane</td>
+            <td>Badlapur</td>
+            <td>
+              <select>
+                <option value="accept">Accept</option>
+                <option value="decline">Decline</option>
+              </select>
+            </td>
+            <td>
+                <select>
+                  <option value="accept">Pending</option>
+                  <option value="decline">Delivered</option>
+                </select>
+              </td>
+
+          </tr>
+        </tbody>
+      </table>
+  </body>
+</html>
