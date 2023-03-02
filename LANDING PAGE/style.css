@@ -213,7 +213,7 @@ header .container {
 }
 
 .person {
-    width: 123%;
+    width: 100%;
     transform: translate(15%, 25px);
 }
 
