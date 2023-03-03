@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>(1:58)Form Website Cloned</title>
+
+      <!-- font awesome cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+      <!-- custom css file link  -->
+      <link rel="stylesheet" href="{%static 'login/CSS/customer_index_style.css' %}">
+   </head>
+
+   <body>
+      <section class="order" id="order">
+
+         <div class="heading">
+            <h3>Add green to life with FreshWheels</h3>
+         </div>
+      
+         <form action="">
+            <div class="box-container">
+               <div class="box">
+                  <div class="inputBox">
+                     <span>First Name</span>
+                     <input  name="fNameEditText" type="text" placeholder="enter your First name" id="first_name">
+                  </div>
+                  <div class="inputBox">
+                     <span>Last Name</span>
+                     <input name="lNameEditText" type="text" placeholder="Enter you Last name" id="last_name">
+                  </div>
+                  <div class="inputBox">
+                     <span>Phone Number</span>
+                     <input name="phoneNumberEditText" type="tel" id="phone_no" placeholder="Enter your 10 digit Phone Number">
+                  </div>
+                  <div class="inputBox">
+                     <span>your address</span>
+                     <textarea name="addressEditText" placeholder="enter your current residential address" id="customer_address" cols="30" rows="10"></textarea>
+                  </div>
+               </div>
+               
+            </div>
+            <input type="submit" name="Submit_btn" value="SubInfo" class="btn">
+         </form>
+         
+      </section>
+
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+      <!-- custom js file link  -->
+      <script src="{%static 'login/JS/script.js' %}"></script>
+
+      <script>
+         lightGallery(document.querySelector('.gallery .gallery-container'));
+      </script>
+
+   </body>
+</html>

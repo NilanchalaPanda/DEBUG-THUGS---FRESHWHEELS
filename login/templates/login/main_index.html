@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="{%static 'login/CSS/main_index_style.css' %}">
+</head>
+
+<body>
+    <!-- HTML Content -->
+    <main>
+        <div class="big-wrapper light" style="padding-bottom: 30px;">
+
+            <header>
+                <div class="container">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <img src="{%static 'login/CSS/img/logo.png' %}" alt="Logo" />
+
+                        <h3>FreshWheels</h3>
+                    </div>
+                    <!-- NAVBAR -->
+                    <div class="links">
+                        <ul>
+                            {% comment %} <li><a href="#">About Us</a></li>
+                            <li><a href="#">Testimonials</a></li> {% endcomment %}
+                            <li><a href="registration" class="btn">Sign up/ LogIn</a></li>
+                            {% comment %} <li><a href="registration_page.html" class="btn">Sign up/ LogIn</a></li> {% endcomment %}
+                        </ul>
+                    </div>
+
+                    <div class="overlay"></div>
+
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="showcase-area">
+                <div class="container">
+                    <!-- LEFT SIDE TEXT -->
+                    <div class="left">
+                        <div class="big-title">
+                            <h1>Future is here,</h1>
+                            <h1>Start Exploring now.</h1>
+                        </div>
+                        <p class="text">
+                            Fresh Wheels is a reliable partner that handles the logistics of delivering farmers products to customers, so they can focus on what they do best: growing the best crops. <br> For customers, we're the easiest way to get farm-fresh produce delivered to your doorstep.
+                        </p>
+                        <div class="cta">
+                            <a href="#" class="btn">Get started</a>
+                        </div>
+                    </div>
+                    <!-- IMAGE -->
+                    <div class="right">
+                        <img src="{%static 'login/CSS/img/person.png' %}" alt="Image" class="person" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-area">
+                <div class="container">
+                    <button class="toggle-btn" style="margin-top: 20px;">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Files -->
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="{%static 'login/JS/main_index.js' %}"></script>
+</body>
+
+</html>

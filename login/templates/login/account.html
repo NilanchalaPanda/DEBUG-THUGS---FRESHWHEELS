@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCOUNT PAGE</title>
+
+    <link rel="stylesheet" href="{%static 'login/CSS/customer.css' %}">
+    {% comment %} <link rel="stylesheet" href="/CSS/account.css"> {% endcomment %}
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+    <!-- NAVBAR STARTS HERE -->
+    <div>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+            <a href="#" class="logo">FreshWheels</a>
+
+            <ul class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <li><a href="customer">Home</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <li><a href="product">Products</a></li>
+                <li><a href="cart">MY-CART</a></li>
+                <li><a href="account"><i class="uil uil-user-square"></i></a></li>
+            </ul>
+
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <div class="search-box">
+                <i class="uil uil-search search-icon"></i>
+                <input type="text" placeholder="Search here..." />
+            </div>
+        </nav>
+    </div>
+    <!-- NAVBAR STARTS ENDS -->
+
+    <div style="margin-top: 6rem;">>
+        <h1>THIS IS THE ACCOUNTS PAGE</h1>
+    </div>
+    <!-- NAVBAR STARTS ENDS -->
+
+    <!-- SCRIPT TAG -->
+    <script src="{%static 'login/JS/customer.js' %}"></script>
+    {% comment %} <script src="/JS/customer.js"></script> {% endcomment %}
+</body>
+
+</html>

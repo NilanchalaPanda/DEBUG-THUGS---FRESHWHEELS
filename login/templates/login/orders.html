@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'login/CSS/orders.css' %}">
+    <title>Orders</title>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">FreshWheels</a>
+
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="driver">HOME</a></li>
+            <li><a href="orders">ORDER STATUS</a></li>
+            <li><a href="requests">REQUESTS</a></li>
+        </ul>
+
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+            <i class="uil uil-search search-icon"></i>
+            <input type="text" placeholder="Search here..." />
+        </div>
+    </nav>
+</head>
+<body>
+    <br>
+<br>
+<br>
+<br>
+
+    <table aria-setsize="0.5">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Abhinaya</td>
+            <td>Chembur</td>
+            <td>Kalyan</td>
+            <td>
+                <select>
+                  <option value="accept">Pending</option>
+                  <option value="decline">Delivered</option>
+                </select>
+              </td>
+          </tr>
+          <tr>
+            <td>Gomati</td>
+            <td>Thane</td>
+            <td>Badlapur</td>
+            <td>
+                <select>
+                  <option value="accept">Pending</option>
+                  <option value="decline">Delivered</option>
+                </select>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+      
+</body>
+</html>

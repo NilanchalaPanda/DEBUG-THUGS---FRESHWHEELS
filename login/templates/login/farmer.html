@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARMER MAIN PAGE</title>
+
+    <link rel="stylesheet" href="{%static 'login/CSS/customer.css' %}">
+    <link rel="stylesheet" href="{%static 'login/CSS/main_index.css' %}">
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+    <!-- NAVBAR STARTS HERE -->
+    <div>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+            <a href="#" class="logo">FreshWheels</a>
+
+            <ul class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <li><a href="farmer">Home</a></li>
+                <li><a href="farmerInventory">Inventory</a></li>
+                <li><a href="#"><i class="uil uil-user-square"></i></a></li>
+            </ul>
+
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <div class="search-box">
+                <i class="uil uil-search search-icon"></i>
+                <input type="text" placeholder="Search here..." />
+            </div>
+        </nav>
+    </div>
+    <!-- NAVBAR STARTS ENDS -->
+
+    <section class="section-hero">
+        <div class="hero">
+            <div class="hero-text-box">
+                <h1 class="heading-primary">
+                    Simplify Your Crop Deliveries with FreshWheels
+                </h1>
+                <p class="hero-description">
+                    Are you tired of spending countless hours on the phone trying to schedule crop deliveries? Do you wish there was a more efficient way to manage your deliveries and keep track of your shipments? FresjWheels is the solution you need
+                </p>
+                <a href="#" class="btn btn--fill margin-right-btn">Start eating well
+                </a>
+                <a href="#" class="btn btn--outline margin-right-btn">Learn more &darr;
+                </a>
+            </div>
+            <div class="hero-img-box">
+                <img
+                  src="{%static 'login/CSS/img/farmer.jpg' %}"
+                  alt="Farmers growing crops in the field"
+                  class="hero-img"
+                />
+              </div>
+        </div>
+    </section>
+    <!-- HERO SECTION ENDS HERE -->
+
+
+    <!-- STEPS SECTION STARTS HERE -->
+    <section class="steps">
+        <div class="box">
+            <img src="{%static 'login/CSS/img/grow.jpg'%}" alt="STEP 1">
+            <h3>Grow crops in your own farm</h3>
+        </div>
+        <div class="box">
+            <img src="{%static 'login/CSS/img/list.png'%}" alt="STEP 2">
+            <h3>List them on FreshWheels for sale</h3>
+        </div>
+        <div class="box">
+            <img src="{%static 'login/CSS/img/paid.png'%}" alt="STEP 3">
+            <h3>Get the right payment that you deserve</h3>
+        </div>
+    </section>
+    <!-- STEPS SECTION ENDS HERE -->
+
+    <!-- SCRIPT TAG -->
+    <script src="{%static 'login/JS/customer.js' %}"></script>
+
+</body>
+
+</html>

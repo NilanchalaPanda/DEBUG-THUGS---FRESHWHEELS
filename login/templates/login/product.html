@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT PAGE</title>
+
+    <link rel="stylesheet" href="{%static 'login/CSS/customer.css' %}">
+    <link rel="stylesheet" href="{%static 'login/CSS/product.css' %}">
+
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+    <!-- NAVBAR STARTS HERE -->
+    <div>
+        <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+            <a href="#" class="logo">FreshWheels</a>
+
+            <ul class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <li><a href="customer">Home</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <li><a href="product">Products</a></li>
+                <li><a href="cart">MY-CART</a></li>
+                <li><a href="account"><i class="uil uil-user-square"></i></a></li>
+            </ul>
+
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <div class="search-box">
+                <i class="uil uil-search search-icon"></i>
+                <input type="text" placeholder="Search here..." />
+            </div>
+        </nav>
+    </div>
+
+    <!-- NAVBAR STARTS ENDS -->
+
+    <!-- HEADER PART- BASIC LINE -->
+    <div class="grocery">
+        <h1>Your grocery store</h1>
+    </div>
+
+    <!-- PRODUCT DISPLAY SECTION -->
+    <main>
+        <header>
+            <h1>Vegetables & Fruits</h1>
+            <p>
+                <span>&#139;</span>
+                <span>&#155;</span>
+            </p>
+        </header>
+
+        <section>
+            {% for key, value in paramsForHtml.items %}
+            <div class="product">
+                <picture>
+                    <img src="" alt="">
+                </picture>
+                <div class="detail">
+                        <p>
+                                <b>{{value.Name}}</b><br>
+                                <small>{{value.Type}}</small>
+                        </p>
+                        <samp>&#8377;{{value.Price}}</samp>
+                    </div>
+                    <div class="button">
+                        <p class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                        </p>
+                        <a href="#" class="add_cart">Add-cart</a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </section>
+    </main>
+
+    <!-- SCRIPT TAG -->
+    <script src="{%static 'login/JS/customer.js' %}"></script>
+    <script src="{%static 'login/JS/product.js' %}"></script>
+</body>
+
+</html>

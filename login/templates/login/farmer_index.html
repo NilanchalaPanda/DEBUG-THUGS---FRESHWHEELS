@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration Page</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="{%static 'login/CSS/farmer_index.css' %}">
+
+</head>
+<body>
+
+<section class="order" id="order">
+
+   <div class="heading">
+      <h3>Grow and earn with FreshWheels </h3>
+   </div>
+
+   <form action="">
+      <div class="box-container">
+         <div class="box">
+            <div class="inputBox">
+               <span>full name</span>
+               <input name="nameEditText" type="text" placeholder="Enter your name">
+            </div>
+            <div class="inputBox">
+               <span>About You</span>
+               <textarea name="descriptionEditText" placeholder="Tell us something about yourself" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="inputBox">
+                <span>Phone number</span> 
+                <input name="phoneNumberEditText" type="tel" id="phone" name="phone" placeholder="Enter 10 digit phone number" >
+            </div>
+         </div>
+         <div class="box">
+            
+            <div class="inputBox">
+               <span>License number</span>
+               <input name="licenseNumberEditText" type="text" placeholder="Enter your License number">
+            </div>
+            <div class="inputBox">
+               <span>address</span>
+               <textarea name="addressEditText" placeholder="Enter your farm address" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="inputBox">
+                <span>district</span>
+                <input name="districtEditText" type="text" placeholder="Enter your district">
+            </div>
+            </div>
+         </div>
+      </div>
+      <input name="Submit_btn" type="submit" value="SubInfo" class="btn">
+      {% comment %} <a href="farmer"> <span class="next_page">Next Page</span> </a> {% endcomment %}
+   </form>
+   
+</section>
+
+</body>
+</html>
