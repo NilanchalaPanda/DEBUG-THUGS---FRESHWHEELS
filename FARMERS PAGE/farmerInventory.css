@@ -1,0 +1,308 @@
+
+
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f0faff;
+}
+
+.nav {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 200px;
+    background: #4a98f7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav,
+.nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    justify-content: space-between;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav .logo {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.nav .nav-links {
+    font-size: 1.7rem;
+    column-gap: 20px;
+    list-style: none;
+}
+
+.nav .nav-links a {
+    transition: all 0.2s linear;
+}
+
+.nav.openSearch .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav .search-icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav .search-box {
+    position: absolute;
+    right: 250px;
+    height: 45px;
+    max-width: 555px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s linear;
+}
+
+.nav.openSearch .search-box {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    left: 15px;
+    color: #4a98f7;
+    transform: translateY(-50%);
+}
+
+.search-box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 0 15px 0 45px;
+}
+
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+    display: none;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+.section-hero {
+    margin-top: 4rem;
+}
+
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 8.4rem 0 9.6rem 0;
+}
+
+.hero {
+    /* We'll not use px to define the length and will use rem. */
+    /* max-width: 1300px; */
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    align-items: center;
+    gap: 0 9.6rem;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.05;
+    margin-bottom: 3.6rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+}
+
+.hero-img-box {
+    display: flex;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 1 / 3;
+}
+
+.hero-img {
+    width: 100%;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-3rem);
+    }
+}
+
+/* STEPS SECTION STYLING STARTS */
+.steps{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.steps .box{
+    flex: 1 1 25rem;
+    padding:1rem;
+    text-align: center;
+}
+
+.steps .box img {
+    width: 25rem;
+    border-radius: 50%;
+    border: 1rem solid #312f3a;
+    box-shadow: 0 .5rem 1rem rgba(100, 188, 244, 0.3);
+}
+
+.steps .box h3 {
+    font-size: 3rem;
+    color: #333;
+    padding: 1rem;
+}
+
+/* responsive */
+@media screen and (max-width: 1160px) {
+    .nav {
+        padding: 15px 100px;
+    }
+
+    .nav .search-box {
+        right: 150px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .nav {
+        padding: 15px 50px;
+    }
+
+    .nav .search-box {
+        right: 100px;
+        max-width: 400px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .nav .navOpenBtn,
+    .nav .navCloseBtn {
+        display: block;
+    }
+
+    .nav {
+        padding: 15px 20px;
+    }
+
+    .nav .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        max-width: 280px;
+        width: 100%;
+        padding-top: 100px;
+        row-gap: 30px;
+        flex-direction: column;
+        background-color: #11101d;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease;
+        z-index: 100;
+    }
+
+    .nav.openNav .nav-links {
+        left: 0;
+    }
+
+    .nav .navOpenBtn {
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav .navCloseBtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav .search-box {
+        top: calc(100% + 10px);
+        max-width: calc(100% - 20px);
+        right: 50%;
+        transform: translateX(50%);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* .hero .hero-img-box {
+        display: flex;
+        justify-content: center;
+    } */
+
+    .hero .hero-img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    html {
+        font-size: 45%;
+    }
+    .hero .hero-img {
+        width: 79%;
+    }
+}
+
+.navbarr{
+    margin-bottom: 73px;
+    
+}
