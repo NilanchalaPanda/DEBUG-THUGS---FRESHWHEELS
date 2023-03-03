@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="farmers.css" />
+
+  <body>
+    <header>Farmer's details</header>
+<div>
+	<form>
+		<label for="name" class="form-label">Farmer's license number</label>
+		<input type="number"  id="name" name="name" placeholder="license number here" required>
+
+		<label for="email" class="form-label">Farmer's location</label>
+    <select id="crop-type" name="crop-type" required>
+      <option value="">--Location--</option>
+			<option value="wheat">Mumbai(central)</option>
+			<option value="wheat">Mumbai(western)</option>
+			<option value="wheat">Navi mumbai</option>
+			<option value="wheat">Kalyan and Ulhasnagar</option>
+			<option value="corn">Pune</option>
+			<option value="cotton">Other</option>
+		</select>
+
+    
+		<label for="crop-type">Product Category</label>
+		<select id="crop-type" name="crop-type" required>
+      <option value="">--Select your product category--</option>
+			<option value="wheat">Fruits</option>
+			<option value="corn">Vegetables</option>
+			<option value="rice">Pulses and grains</option>
+			<option value="cotton">Other</option>
+		</select>
+    <label for="address" class="form-label">About the farmer(optional)</label>
+    <textarea id="address" name="address" placeholder="Your address.." required></textarea>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
+    <div>
+      <form id="regForm">
+        <h1>Add an item</h1>
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+          
+          <p>
+            <input
+              placeholder="Item name"
+              oninput="this.className = ''"
+              name="fname"
+            />
+          </p>
+          <p>
+            <textarea name="item-description" id="" cols="30" rows="2" placeholder="Item decription" ></textarea>
+          </p>
+          <p>
+            <input
+              placeholder="Price(in INR)"
+              oninput="this.className = ''"
+              name="fname"
+            />
+          </p>
+        </div>
+        <div class="tab">
+          <p>
+            <input
+              placeholder="Item name"
+              oninput="this.className = ''"
+              name="fname"
+            />
+          </p>
+          <p>
+            <textarea name="item-description" id="" cols="30" rows="2" placeholder="Item decription" ></textarea>
+          </p>
+          <p>
+            <input
+              placeholder="Price(in INR)"
+              oninput="this.className = ''"
+              name="fname"
+            />
+          </p>
+        </div>
+        <div class="tab">
+          <p>
+            <input
+              placeholder="Item name"
+              oninput="this.className = ''"
+              name="fname"
+            />
+          </p>
+          <p>
+            <textarea name="item-description" id="" cols="30" rows="2" placeholder="Item decription" ></textarea>
+          </p>
+          <p>
+            <input
+              placeholder="Price(in INR)"
+              oninput="this.className = ''"
+              name="fname"
+            />
+          </p>
+        </div>
+        <div class="tab">
+          <p>
+            <input
+              placeholder="Item name"
+              oninput="this.className = ''"
+              name="fname"
+            />
+          </p>
+          <p>
+            <textarea name="item-description" id="" cols="30" rows="2" placeholder="Item decription" ></textarea>
+          </p>
+          <p>
+            <input
+              placeholder="Price(in INR)"
+              oninput="this.className = ''"
+              name="fname"
+            />
+          </p>
+        </div>
+        <div style="overflow: auto">
+          <div style="float: right">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+              Finish
+            </button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">
+              Add more items
+            </button>
+          </div>
+        </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align: center; margin-top: 40px">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+    </div>
+
+    <script src="farmers.js"></script>
+  </body>
+</html>
