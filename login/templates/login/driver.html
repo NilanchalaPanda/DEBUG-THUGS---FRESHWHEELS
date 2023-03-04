@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Homepage</title>
+  <link rel="stylesheet" href="{%static 'login/CSS/driver_nicepage.css' %}" media="screen">
+  <link rel="stylesheet" href="{%static 'login/CSS/driver_home.css' %}" media="screen">
+  <link rel="stylesheet" href="{%static 'login/CSS/driver.css' %}">
+  <!-- Unicons CSS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode" data-lang="en">
+  <!-- NAVBAR STARTS HERE -->
+  <nav class="nav" style="z-index: 1;">
+    <i class="uil uil-bars navOpenBtn"></i>
+    <a href="#" class="logo">FreshWheels</a>
+
+    <ul class="nav-links">
+      <i class="uil uil-times navCloseBtn"></i>
+      <li><a href="driver">HOME</a></li>
+      <li><a href="orders">ORDER STATUS</a></li>
+      <li><a href="requests">REQUESTS</a></li>
+    </ul>
+
+    <i class="uil uil-search search-icon" id="searchIcon"></i>
+    <div class="search-box">
+      <i class="uil uil-search search-icon"></i>
+      <input type="text" placeholder="Search here..." />
+    </div>
+  </nav>
+  <br>
+  <!-- NAVBAR STARTS ENDS -->
+
+
+  <section class="u-clearfix u-grey-5 u-section-1" id="carousel_2b58">
+    <div class="u-clearfix u-sheet u-valign-bottom-md u-valign-middle-xs u-sheet-1">
+      <div
+        class="u-custom-color-2 u-expanded-height-md u-expanded-height-sm u-expanded-height-xs u-shape u-shape-rectangle u-shape-1">
+      </div>
+      <img src="{%static 'login/CSS/img/car_image.jpg' %}" class="u-align-left u-expanded-width-xs u-image u-image-1"
+        data-image-width="626" data-image-height="417">
+      <div class="u-align-left u-container-style u-group u-white u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <h2 class="u-custom-font u-font-montserrat u-text u-text-custom-color-2 u-text-default u-text-1">JOIN OUR
+            DRIVE COMMUNITY&nbsp; </h2>
+          <p class="u-custom-font u-text u-text-2">Transport from any corner of India to any place, anytime, at your
+            ease. Get payment immediately after completing your order!&nbsp;<br>Join us now and be the crucial,
+            underlying bond between the farmers and customers!!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+</body>
+
+</html>
